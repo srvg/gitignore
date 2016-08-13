@@ -1,0 +1,18 @@
+#!/bin/bash
+
+merge() {
+for file in *.gitignore
+do
+    type=${file/.gitignore}
+    echo
+    echo '########################################'
+    echo '#' $type
+    echo '########################################'
+    echo
+    cat $file
+    echo
+done
+}
+
+#merge >> GITIGNORE
+merge
