@@ -3,14 +3,19 @@
 merge() {
 for file in *.gitignore
 do
-    type=${file/.gitignore}
-    echo
-    echo '########################################'
-    echo '#' $type
-    echo '########################################'
-    echo
-    cat $file
-    echo
+	case $file in
+		Eclipse.gitignore);;
+		FlexBuilder.gitignore);;
+		*)
+			type=${file/.gitignore}
+    		echo
+    		echo '########################################'
+    		echo '#' $type
+    		echo '########################################'
+    		echo
+    		cat $file
+    		echo
+	esac
 done
 }
 
