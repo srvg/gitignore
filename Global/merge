@@ -20,5 +20,6 @@ do
 done
 }
 
+cd $(dirname $0)
 #merge >> GITIGNORE
 merge
