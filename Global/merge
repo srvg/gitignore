@@ -6,6 +6,7 @@ do
 	case $file in
 		Eclipse.gitignore);;
 		FlexBuilder.gitignore);;
+		VirtualEnv.gitignore);;
 		*)
 			type=${file/.gitignore}
     		echo
