@@ -8,6 +8,7 @@ merge() {
 			FlexBuilder.gitignore);;
 			VirtualEnv.gitignore);;
 			ModelSim.gitignore);;
+			Lazarus.gitignore);;
 			*)
 				type=${file/.gitignore}
 				echo
